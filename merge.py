@@ -1,19 +1,15 @@
-def merge(firstList,secondList):
-    i,j = 0,0
-
-    myMerged=[]
-    while i < len(firstList) and j <len(secondList):
-        if firstList[i] <= secondList[j]:
-            myMerged.append(firstList[i])
-            i+=i
+def merge(list1, list2):
+    i=0 
+    j=0
+    mergeList = []
+    while i<len(list1) and j<len(list2):
+        if list1[i] <= list2[j]:
+            mergeList.append(list1[i])  
+            i += 1
+            
         else:
-            myMerged.append(secondList[j])
-            j+=1
-    myMerged.extend(firstList[i:])
-    myMerged.extend(secondList[j:])
-    return myMerged
-
-
-
-
-
+            mergeList.append(list2[j])
+            j += 1
+    mergeList.extend(list1[i:])  
+    mergeList.extend(list2[j:]) 
+    return mergeList
