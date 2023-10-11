@@ -1,15 +1,21 @@
 def merge_list(list1, list2):
-    i,j=0,0
-    myList = []
+    i=0 
+    j=0
+    list1_size=len(list1)
+    list2_size=len(list2)
     
-    while i< len(list1) and j<len(list2):
-        if list1[i] < list2[j]:
-            myList.append(list1[i])  
-            i += 1
-        else:
-            myList.append(list2[j])
-            j += 1
-    myList=myList+list1[i:]+list2[J:]
-    return myList
+    if (list1_size.isnumeric() and  list2_size.isnumeric()):
+        myList = []
+        while i< list1_size and j<list2_size:
+            if list1[i] <= list2[j]:
+                myList.append(list1[i])  
+                i += 1
+            else:
+                myList.append(list2[j])
+                j += 1
+        myList.extend(list1[i:])  
+        myList.extend(list2[j:]) 
+        return myList
+    else:
+        raise ValueError('invalid input')
     
-        #raise ValueError('invalid input')
