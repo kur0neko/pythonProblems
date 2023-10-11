@@ -1,4 +1,4 @@
-def reverse_sort_dictionary(adict):
+def sort_dictionary(adict):
     sorted_keys = sorted(adict.keys(), key = lambda x: adict[x][1])
     
     result = []
