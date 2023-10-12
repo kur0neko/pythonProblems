@@ -5,3 +5,4 @@ def reverse_sort_dictionary(input_dict):
     result = [(name, data[0]) for name, data in sorted_items]
     
     return result
+
