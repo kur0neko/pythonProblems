@@ -1,0 +1,10 @@
+Write two uses for why you would use inheritance in a program?
+
+There are two main benefit of inheritance, 
+1. Reusability of codes -inheritance make it possible to reuse the exisitng codes from mulitple classes. 
+                         Instead of rewriting a new similar code. you can use the existing function/attribute from another class that doing similar thing.
+
+2. Polymorphism and method overriding- Polymorphism is one of the most significant concept in OOP (object oriented programing) 
+                                       it allows you to define a method in base class or superclass and then we can override them in derived class.
+                                       Polymorphism concept is like shap-shiter, where an object of different types can be used interchanble, allowing flexibility and versatility in programing just like what we see in Circle do to Base class.
+                                       
