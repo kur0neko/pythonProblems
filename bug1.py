@@ -30,16 +30,13 @@ class Circle(Base):
   ,                       ,
    ,                    ,
     ' -  , _  _  _  , '
-              """
-   
-              
+              """         
 def main():
-    c = Circle(1,2,3) 
+    c = Circle(1,4,3) 
     print(c.shape()) 
     print(c.draw())
 
-if __name__ == '__main__':
-    main()
+main()
 
       
 
