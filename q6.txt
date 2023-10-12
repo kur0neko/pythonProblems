@@ -1,0 +1,22 @@
+
+
+1. Does the change inside increment_int_a change the variable a after the function call? 
+
+No, `increment_int_a` does not change the variable `a` after the function call. 
+The reason is that the variable `a` is of type integer, which is an immutable data type in Python. 
+
+
+2. Does the change inside increment_int_b change the variable b after the function call? 
+
+Yes, `increment_int_b` changes the variable `b` after the function call. 
+The reason is that the variable `b` is a dictionary, which is a mutable data type in Python.
+
+
+3. If they differ answer why? if not why not?
+
+The reason they are different in answer because
+
+When you pass `a` to the function, a copy of the integer is created, and any changes made to `someval` inside the function do not affect the original variable `a`.
+
+When you pass `b` to the function, you are working with the original dictionary, and any modifications made to `someval` inside the function directly affect the dictionary `b` outside the function.
+
