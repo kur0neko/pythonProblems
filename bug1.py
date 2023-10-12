@@ -5,9 +5,8 @@ class Base:
         self.y = y
         self.size = size
 
-class Circle():
+class Circle(Base):
     def __init__(self, x, y, size):
-        #call superclass
         super().__init__(x, y, size)
         
     def shape(self):
