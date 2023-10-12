@@ -1,5 +1,5 @@
 #super class
-class Shape:
+class Base:
     #attributes and method definition
     def __init__(self, x, y, size):
         self.x = x
@@ -7,7 +7,7 @@ class Shape:
         self.size = size
     
 #inheritance
-class Circle(Shape):
+class Circle(Base):
     #attribute and metod of super_class
     def __init__(self, x, y, size):
         #call superclass
