@@ -8,6 +8,7 @@ def merge_list(list1, list2):
     list1_size=len(list1)
     list2_size=len(list2)
     myList = []
+    
     while i< list1_size and j<list2_size:
         if list1[i] <= list2[j]:
             myList.append(list1[i])  
