@@ -6,6 +6,7 @@ def merge_list(list1, list2):
     myList = []
     
     if (type(list1) == list and type(list2) == list):
+        
         while i< list1_size and j<list2_size:
             if list1[i] <= list2[j]:
                 myList.append(list1[i])  
@@ -18,5 +19,4 @@ def merge_list(list1, list2):
         return myList
     else:
           raise ValueError('Invalid input, the argument is not a list')
-        
-        
+ 
