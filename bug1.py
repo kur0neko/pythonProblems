@@ -1,38 +1,37 @@
-#super class
 class Base:
-    #attributes and method definition
+# TODO: there's code missing in one or more lines below
     def __init__(self, x, y, size):
         self.x = x
         self.y = y
         self.size = size
-    
-#inheritance
-class Circle(Base):
-    #attribute and metod of super_class
+
+class Circle():
     def __init__(self, x, y, size):
         #call superclass
         super().__init__(x, y, size)
         
     def shape(self):
         return "This is a circle"
-    
-    def draw(self): 
+
+    def draw(self):
         return f"""
-    ({self.x}, {self.y})\n{self.size}
-        , - ~ ~ ~ - ,
-    , '               ' , 
-  ,                       , 
- ,                         , 
-,                           ,  
-,                           , 
-,                           ,
- ,                         , 
-  ,                       ,
-   ,                    ,
-    ' -  , _  _  _  , '
-              """         
+({self.x}, {self.y})\n{self.size}
+         , - ~ ~ ~ - ,
+     , '               ' ,
+   ,                       ,
+  ,                         ,
+ ,                           ,
+ ,                           ,
+ ,                           ,
+  ,                         ,
+   ,                       ,
+     ,                  , '
+       ' - , _ _ _ ,  '
+               """
+
+
 def main():
-    c = Circle(1,4,3) 
+    c = Circle(1,2,3) 
     print(c.shape()) 
     print(c.draw())
 
